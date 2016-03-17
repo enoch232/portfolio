@@ -1,0 +1,27 @@
+<div>
+	<div class = "wrapper clearfix slide-animation">
+			<div class = "col-1 fontBradley">
+				<h3 id = "primary-content">I am..</h3>
+				<hr>
+				<p>A full stack developer in Phoenix Arizona,</p>
+				<p>Specializing in web designs, and development using Ruby on Rails.</p>
+				<p>Strong knowledge in C/C++, Java, Assembly, Javascript(AngularJS,JQuery), PHP.</p>
+			</div>
+			<div class = "col-2 fontBradley" >
+				<h3>Recent Projects</h3>
+				<hr>
+				<% @projects.each do |project| %>
+				<p><span style = "font-size:1.5em"><%= link_to project.title, project.url %></span> <span style = "font-size:.8em"> posted <%= time_ago_in_words(project.created_at) %> ago.</span></p>
+				<%end%>
+			</div>
+			<div class = "col-3 fontBradley">
+				<h3>Recent Articles</h3>
+				<hr>
+				<% @posts.each do |post| %>
+				<p><span style = "font-size:1.5em"><%= link_to post.title, post %></span> <span style = "font-size:.8em">posted <%= time_ago_in_words(post.created_at) %> ago.</span></p>
+				<%end%>
+				
+			</div>
+	</div>
+</div>
+

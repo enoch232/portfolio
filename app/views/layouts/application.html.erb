@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enoch's Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% if notice || alert %>
+	<div id = "notification" class = "fontBradley" style = "font-size:2em">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+	</div>
+	<%end%>
+	<header class = "clearfix">
+		<div class = "logo noDecoration">
+			<%= link_to "Enoch Ko", root_path, style: "color:#626262;letter-spacing:0.5em" %>
+		</div>
+		<nav class ="nav-links">
+			<a><%= link_to "Projects", projects_path %></a>
+			<a><%= link_to "Articles", posts_path %></a>
+			<a><%= link_to "About Me", homes_aboutme_path %></a>
+			<a><%= link_to "Contact", homes_contact_path %></a>
+			<% if user_signed_in? %>
+			<a><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+			<%end%>
+		</nav>
+	</header>
+
+
+
+
+
+
+<%= yield %>
+	
+	<div class = "footer">
+
+			<p>&copy; <span class = "fontBradley">2016 Enoch Ko<span></p>
+
+	</div>
+<script>
+	$(document).ready(function(){
+		setTimeout(function(){
+			$("#notification").fadeOut("slow",function(){
+				$("this").remove()
+
+			})
+		},1300)
+	});
+
+
+</script>
+
+
+</body>
+
+</html>
