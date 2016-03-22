@@ -5,11 +5,11 @@
 <div>
   <% @projects.each do |project| %>
 
-  <div class = "projectViews fontBradley">
+  <div class = "projectViews fontBradley animated bounceInRight">
     <div style = "text-align:center;width: 100%;font-size:1.5em" >
       <%= project.title %>
     </div>
-    <div style = "width: 100%;height:5em;color:#525252" >
+    <div class = ".visible-xs-block hidden-xs"style = "width: 100%;height:5em;color:#525252">
       <%= project.description %>
     </div>
     <div style = "text-align:center;width: 100%" >

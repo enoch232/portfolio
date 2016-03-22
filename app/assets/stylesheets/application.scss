@@ -2,8 +2,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "normalize.scss";
+@import "animate.css";
+html{
+  position:relative; 
+  min-height: 100%;
+}
 .noDecoration{
 	text-decoration: none;
+}
+.icon-bar{
+	background-color:black;
 }
 .logo{
 	color:#626262;
@@ -76,13 +84,7 @@ hr{
 	height:2px;
 	border: 2px solid #e2e2e2;
 }
-footer{
 
-	float:left;
-	padding:2.5em 5%;
-	padding-top: 20%;
-
-}
 .projectViews{
 	border-radius: 1em;
 	box-shadow: 1px 1px 1px 1px #e2e2e2;
@@ -92,6 +94,7 @@ footer{
 	width:30%;
 	height:11em;
 	border:2px solid #69d2ce;
+	background-color:#f2f2f2;
 }
 .projectViews:hover{
 	background-color:#f2f2f2;
@@ -106,6 +109,7 @@ footer{
 	display:inline-block;
 	width:80%;
 	height:11em;
+	background-color:#f2f2f2;
 }
 .postViews:hover{
 	background-color:#f2f2f2;
@@ -123,7 +127,7 @@ a:hover{
    bottom:0;
    width:100%;
    height:5em;
-   background:#e2e2e2;
+   background:#f2f2f2;
    padding:1em;
 }
 #notification{
