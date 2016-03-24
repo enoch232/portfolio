@@ -15,7 +15,7 @@ html{
 }
 .logo{
 	color:#626262;
-	border: 3px solid #e2e2e2;
+	border: 3px solid #626262;
 	font-size: 1em;
 	margin: 2em 3em;
 	padding: 0.25em 3em;
@@ -79,7 +79,7 @@ header{
 	padding:0 5% 0 2.5%;
 
 }
-hr{
+.hr-special{
 	display:block;
 	height:2px;
 	border: 2px solid #e2e2e2;
@@ -93,7 +93,7 @@ hr{
 	float:left;
 	width:30%;
 	height:11em;
-	border:2px solid #69d2ce;
+	border:2px solid #9baec8;
 	background-color:#f2f2f2;
 }
 .projectViews:hover{
@@ -107,16 +107,16 @@ hr{
 	margin:1.5em;
 	padding:1em;
 	display:inline-block;
-	width:80%;
+	width:90%;
 	height:11em;
-	background-color:#f2f2f2;
+	background-color:#white;
 }
 .postViews:hover{
 	background-color:#f2f2f2;
 	box-shadow: 4px 4px 4px 4px #e2e2e2;
 }
 a{
-	color:#69d2ce;
+	color:#9baec8;
 }
 a:hover{
 	text-decoration:none;
@@ -127,7 +127,7 @@ a:hover{
    bottom:0;
    width:100%;
    height:5em;
-   background:#f2f2f2;
+   background-color:#d9e1e8;
    padding:1em;
 }
 #notification{
@@ -136,10 +136,16 @@ a:hover{
 	text-align:center;
 	height:3em;
 	opacity:0.7;
-	background-color:#69d2ce;
+	background-color:white;
 }
-
-
+hr-2{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
 
 
 

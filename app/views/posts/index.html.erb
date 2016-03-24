@@ -2,18 +2,20 @@
   <h1 class = "fontBradley">List of Articles</h1>
   <hr style = "display:inline-block;width:50%">
 </div>
-<div style = "text-align:center">
+
+
+<div style = "text-align:center;margin:0 0 10em 0">
   <% @posts.each do |post| %>
 
   <div class = "postViews fontBradley animated bounceInRight">
     <div style = "text-align:center;width: 100%;font-size:1.5em" >
-      <%= post.title %>
+      <%= link_to post.title, post %>
     </div>
+    <hr class = "hr-2">
     <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:5em;color:#525252" >
       <%= post.body %>
     </div>
     <div style = "text-align:center;width: 100%" >
-      <%= link_to "View", post, class: "btn btn-default" %>
       <% if user_signed_in? %>
         <%= link_to "Delete", post, method: :delete, data: {confirm: "Are you sure?"},class: "btn btn-danger" %>
       <% end %>
@@ -22,3 +24,4 @@
   </div>
   <% end %>
 </div>
+
