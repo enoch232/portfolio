@@ -19,6 +19,7 @@
     <div style = "text-align:center;width: 100%" >
       <%= link_to "View", project.url, class: "btn btn-default" %>
       <% if user_signed_in? %>
+        <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
         <%= link_to "Delete", project, method: :delete, data: {confirm: "Are you sure?"},class: "btn btn-danger" %>
       <% end %>
     </div>
