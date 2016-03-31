@@ -3,7 +3,8 @@
   <h1 class = "fontLato">List of Projects</h1>
   <hr style = "display:inline-block;width:50%">
 </div>
-<div>
+<div style = "text-align:center;margin:0 0 10em 0">
+
   <% @projects.each do |project| %>
 
   <div class = "projectViews fontLato animated fadeIn">
@@ -11,7 +12,7 @@
       <%= project.title %>
     </div>
     <div class = "visible-xs-block hidden-lg"style = "width: 100%;height:5em;color:#525252">
-      <%= truncate project.description , length: 13 %>
+      <%= truncate project.description , length: 80 %>
     </div>
     <div class = "hidden-xs" style = "width: 100%;height:5em;color:#525252">
       <%= project.description %>
@@ -26,5 +27,6 @@
 
   </div>
   <% end %>
+
 </div>
 

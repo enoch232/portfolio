@@ -13,7 +13,7 @@
     </div>
     <hr class = "hr-2">
     <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:5em;color:#525252" >
-      <%= event.detail %>
+      <%= truncate(event.detail, length: 200) %>
     </div>
     <div style = "text-align:center;width: 100%" >
       <% if user_signed_in? %>
@@ -25,4 +25,8 @@
   </div>
   <% end %>
 </div>
+<div style = "height:5em">
+
+</div>
+
 
