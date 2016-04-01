@@ -1,5 +1,5 @@
 <div style = "text-align:center;">
-  <h1 class = "fontLato">List of Events</h1>
+  <h1 class = "fontLato">Timeline</h1>
   <hr style = "display:inline-block;width:50%">
 </div>
 
@@ -9,11 +9,11 @@
 
   <div class = "eventViews fontLato animated fadeIn">
     <div style = "text-align:center;width: 100%;font-size:1.5em" >
-      <%= link_to event.title, event %>
+      <%= event.title %>
     </div>
     <hr class = "hr-2">
     <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:5em;color:#525252" >
-      <%= truncate(event.detail, length: 200) %>
+      <%= truncate(event.detail) %>
     </div>
     <div style = "text-align:center;width: 100%" >
       <% if user_signed_in? %>
