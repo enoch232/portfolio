@@ -12,8 +12,8 @@
       <%= event.title %>
     </div>
     <hr class = "hr-2">
-    <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:5em;color:#525252" >
-      <%= truncate(event.detail) %>
+    <div style = "width: 100%;color:#525252" >
+      <%= event.detail %>
     </div>
     <div style = "text-align:center;width: 100%" >
       <% if user_signed_in? %>
