@@ -8,17 +8,13 @@
   <% @posts.each do |post| %>
 
   <div class = "postViews fontLato animated fadeIn">
-    <div style = "text-align:center;width: 100%;font-size:1.5rem" >
-      <%= link_to post.title, post %>
+    <div style = "text-align:left;width: 100%;font-size:1.5rem" >
+      <%= link_to post.title, post %> - <%= time_ago_in_words(post.created_at) %> ago.
     </div>
-    <hr class = "hr-2">
-    <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:4rem;color:#525252" >
-      <%= post.body %>
-    </div>
-    <div style = "text-align:center;width: 100%" >
+    <div style = "text-align:right" >
       <% if user_signed_in? %>
-        <%= link_to "Edit", edit_post_path(post), class: "btn btn-default"%>
-        <%= link_to "Delete", post, method: :delete, data: {confirm: "Are you sure?"},class: "btn btn-danger" %>
+        <%= link_to "Edit", edit_post_path(post) %>
+        <%= link_to "Delete", post, method: :delete, data: {confirm: "Are you sure?"}%>
       <% end %>
     </div>
 
