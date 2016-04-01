@@ -4,15 +4,15 @@
 </div>
 
 
-<div style = "text-align:center;margin:0 0 10em 0">
+<div style = "text-align:center;margin:0 0 0 0">
   <% @posts.each do |post| %>
 
   <div class = "postViews fontLato animated fadeIn">
-    <div style = "text-align:center;width: 100%;font-size:1.5em" >
+    <div style = "text-align:center;width: 100%;font-size:1.5rem" >
       <%= link_to post.title, post %>
     </div>
     <hr class = "hr-2">
-    <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:5em;color:#525252" >
+    <div class = ".visible-xs-block hidden-xs" style = "width: 100%;height:4rem;color:#525252" >
       <%= post.body %>
     </div>
     <div style = "text-align:center;width: 100%" >
@@ -25,4 +25,3 @@
   </div>
   <% end %>
 </div>
-
