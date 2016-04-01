@@ -27,13 +27,13 @@
 	     </button>
 
 		<nav class ="collapse navbar-collapse nav-links" id="myNavbar">
-			<a><%= link_to "Projects", projects_path %></a>
-			<a><%= link_to "Articles", posts_path %></a>
-			<a><%= link_to "Timeline", events_path %></a>
-			<a><%= link_to "About Me", homes_aboutme_path %></a>
-			<a><%= link_to "Contact", homes_contact_path %></a>
+			<a class = "styled-a"><%= link_to "Projects", projects_path %></a>
+			<a class = "styled-a"><%= link_to "Articles", posts_path %></a>
+			<a class = "styled-a"><%= link_to "Timeline", events_path %></a>
+			<a class = "styled-a"><%= link_to "About Me", homes_aboutme_path %></a>
+			<a class = "styled-a"><%= link_to "Contact", homes_contact_path %></a>
 			<% if user_signed_in? %>
-			<a><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+			<a class = "styled-a"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
 			<%end%>
 		</nav>
 	</header>

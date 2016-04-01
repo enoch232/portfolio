@@ -93,11 +93,12 @@ header{
 	height:30rem;
 	font-size:3rem;
 	background-color:white;
-	text-align:center
+	text-align:center;
+	padding:2rem;
 }
 .projectViews:hover{
 	background-color:#607D8B;
-	filter:opacity(10%);
+
 	
 }
 .postViews{
@@ -130,10 +131,10 @@ header{
 	background-color:#f2f2f2;
 	box-shadow: 4px 4px 4px 4px #e2e2e2;
 }
-a{
+.styled-a{
 	color:#2EC4B6;
 }
-a:hover{
+.styled-a:hover{
 	color:#011627;
 	text-decoration:none;
 }

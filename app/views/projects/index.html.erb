@@ -2,21 +2,19 @@
 <div>
 
   <% @projects.each do |project| %>
-  <a href="<%= project.url %>">
     <div class = "col-sm-6 projectViews fontLato animated fadeIn">
-      <span style =""><%= project.title %></span>
+      <span style = "color:#263238"><%= project.title %></span>
       <br>
-      <div style = "text-align:left;padding:1rem">
-      <span style ="font-size:2rem;"><%= project.description %></span>
+      <div class = "descriptiondiv" style = "text-align:left;padding:1rem;font-size:2rem;">
+        <%= project.description %>
       </div>
+        <%= link_to "Check it out!", project.url, class: "btn btn-default" %>
       <% if user_signed_in? %>
         <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
         <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
       <% end %>
     </div>
-  </a>
   <% end %>
 
 </div>
-
 
