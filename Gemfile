@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem "paperclip", "~> 5.0.0.beta1"
+
 gem 'angularjs-rails'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
