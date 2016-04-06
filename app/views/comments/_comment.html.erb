@@ -1,5 +1,12 @@
-<%= div_for(comment) do %>
-	<%= comment.commentor %>
+<div style = "margin:0 3rem 0 3rem">
 	<hr>
-	<%= comment.body %>
+<%= div_for(comment) do %>
+	<div>
+		<%= comment.body %>
+	</div>
+	<div style = "font-size:1rem;color:#111111">
+		Posted by <%= comment.commentor %> <%= time_ago_in_words(comment.created_at) %> ago.
+	</div>
+	<br>
 <% end %>
+</div>

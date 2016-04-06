@@ -1,10 +1,20 @@
-<%= form_for(:comment ,method: :create, url: post_comments_path(@post)) do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :commentor %>
+<div style = "margin:0 3rem 5rem 3rem">
 	<br>
-	<%= f.label :body %>
-	<%= f.text_field :body %>
-	<br>
-	<%= f.submit %>
+	<%= form_for(:comment, method: :create, url: post_comments_path(@post)) do |f| %>
+		<div class="field">
+			<div style = "float:left;margin:0 1rem 0 0"><%= f.label :name %> </div><div style = "float:left;width:45rem"> <%= f.text_field :commentor, class: "form-control", placeholder: "Your name" %></div>
+			
+		</div>
+		<br>
+		<br>
+		<div class="field" style = "width:50rem">
+			<%= f.text_area :body, class: "form-control", placeholder: "Share your thoughts!" %>
+		</div>
+		<br>
+		<div>
+		<%= f.submit "Add comment" ,class: "btn btn-default" ,style: "float:left" %>
+		</div>
 
-<% end %>
+	<% end %>
+	<br>
+</div>
