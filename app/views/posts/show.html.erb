@@ -9,6 +9,12 @@
 
 
 </div>
+<div class = "comment-holder">
+	<%= render partial: @post.comments %>
+</div>
+<div>
+	<%= render "comments/form" %>
+</div>
 <div style = "text-align:center">
 <% if user_signed_in? %>
 <%= link_to 'Edit', edit_post_path(@post) %> |

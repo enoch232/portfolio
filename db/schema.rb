@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20160406182123) do
   create_table "comments", force: :cascade do |t|
     t.string   "commentor"
     t.text     "body"
-    t.integer  "supplier_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "events", force: :cascade do |t|
