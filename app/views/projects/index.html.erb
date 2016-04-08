@@ -9,7 +9,7 @@
       <div class = "descriptiondiv" style = "text-align:left;padding:1rem;font-size:2rem;color:#263238">
         <%= project.description %>
       </div>
-        <%= link_to "Check it out!", project.url, class: "btn btn-default" %>
+        <%= link_to "Check it out!", project.url, class: "btn btn-default checkitoutbtn" %>
       <% if user_signed_in? %>
         <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
         <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
