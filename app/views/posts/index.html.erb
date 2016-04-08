@@ -9,7 +9,7 @@
 
   <div class = "postViews fontLato animated fadeIn">
     <div style = "width: 100%;" >
-      <div style = "float:left;font-size:3rem;margin:0 0 0 3rem"><%= link_to post.title, post %></div> <div style = "color:#818181;float:right;font-size:1.5rem"><%= time_ago_in_words(post.created_at) %> ago.</div>
+      <div style = "float:left;font-size:2.5rem;margin:0 0 0 3rem"><%= link_to post.title, post %></div> <div style = "color:#818181;float:right;font-size:1.5rem"><%= time_ago_in_words(post.created_at) %> ago.</div>
     </div>
     <div style = "text-align:right" >
       <% if user_signed_in? %>

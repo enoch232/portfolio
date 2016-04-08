@@ -1,12 +1,15 @@
-<div style = "margin:0 3rem 5rem 3rem">
+<div style = "margin:0 3rem 5rem 3rem;text-align:center">
 	<br>
 	<%= form_for(:comment, method: :create, url: post_comments_path(@post), remote: true) do |f| %>
-		<div class="field">
-			<div style = "float:left;margin:0 1rem 0 0"><%= f.label :name %> </div><div style = "float:left;width:45rem"> <%= f.text_field :commentor, class: "form-control focus-area", placeholder: "Your name" %></div>	
+		<div class="field" style = "margin:0 10% 2% 0">
+			<div style = "float:left;margin:0 0rem 0 0"><%= f.label :name %><span style = "margin:0 0 0 1rem"></span> </div><div style = "float:left;width:45rem"> <%= f.text_field :commentor, class: "form-control focus-area", placeholder: "Your name" %></div>	
 		</div>
-		<br>
-		<br>
-		<div class="field" style = "width:50rem">
+		<br />
+		<div style = "height:2.5rem">
+
+		</div>
+		<br />
+		<div class="field" style = "width:50rem;margin:0rem 0 0 0">
 			<%= f.text_area :body, class: "form-control", placeholder: "Share your thoughts!" %>
 		</div>
 		<br>
