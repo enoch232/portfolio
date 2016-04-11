@@ -5,6 +5,10 @@
 
 
 <div style = "text-align:center;margin:0 0 0 0">
+  <% if user_signed_in? %>
+    <%= link_to "New Article", new_post_path, class: "btn btn-info" %>
+  <% end %>
+  <br>
   <% @posts.each do |post| %>
 
   <div class = "postViews fontLato animated fadeIn">
