@@ -11,14 +11,14 @@
 				<h3>Recent Projects</h3>
 				<hr class = "hr-special">
 				<% @projects.each do |project| %>
-				<p><span style = "font-size:1.5em"><%= link_to project.title, project.url %></span> <span style = "font-size:.8em"> posted <%= time_ago_in_words(project.created_at) %> ago.</span></p>
+				<p><span style = "font-size:1.5em"><%= link_to truncate(project.title, length: 17), project.url %></span> <span style = "font-size:.8em"> posted <%= time_ago_in_words(project.created_at) %> ago.</span></p>
 				<%end%>
 			</div>
 			<div class = "col-3 fontLato">
 				<h3>Recent Articles</h3>
 				<hr class = "hr-special">
 				<% @posts.each do |post| %>
-				<p><span style = "font-size:1.5em"><%= link_to post.title, post %></span> <span style = "font-size:.8em">posted <%= time_ago_in_words(post.created_at) %> ago.</span></p>
+				<p><span style = "font-size:1.5em"><%= link_to truncate(post.title, length: 17), post %></span> <span style = "font-size:.8em">posted <%= time_ago_in_words(post.created_at) %> ago.</span></p>
 				<%end%>
 				
 			</div>
