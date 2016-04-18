@@ -171,3 +171,25 @@ textarea{
 .checkitoutbtn{
 	background-color:#2EC4B6;
 }
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+* {
+  border-radius: 0 !important;
+}
+#top{
+	background-color:white;
+	height:700px;
+	
+	background: url("grandcanyon.jpg") no-repeat center center scroll;
+	text-align:center;
+	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}

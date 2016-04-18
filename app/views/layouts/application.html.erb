@@ -8,35 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body style = "background-color:white">
 	<% if notice || alert %>
 	<div id = "notification" class = "fontBradley" style = "font-size:2em">
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
 	</div>
 	<%end%>
-	<header class = "clearfix"  style = "background-color:#2EC4B6">
-		<div class = "logo noDecoration">
-			<%= link_to "Enoch Ko", root_path, style: "color:#011627;letter-spacing:0.5em" %>
-		</div>
+	<button id="menu-toggle" href="#" class="btn btn-lg" style = "margin:1rem;background-color:#d04c3f">
+		<span class = "glyphicon glyphicon-menu-hamburger"></span>
+	</button>
+    
 
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style= "margin: 2em 1em 0 0">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span> 
-	     </button>
-
-		<nav class ="collapse navbar-collapse nav-links" id="myNavbar">
-			<a><%= link_to "Projects", projects_path %></a>
-			<a><%= link_to "Articles", posts_path %></a>
-			<a><%= link_to "Timeline", events_path %></a>
-			<a><%= link_to "About Me", homes_aboutme_path %></a>
-			<a><%= link_to "Contact", homes_contact_path %></a>
-			<% if user_signed_in? %>
-			<a><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
-			<%end%>
-		</nav>
-	</header>
 
 
 
@@ -44,14 +27,7 @@
 
 
 <%= yield %>	
-<div style = "height:80px;float:left;width:100%;">
 
-</div>
-<div class = "footer">
-
-	<p>&copy; <span class = "fontBradley">2016 Enoch Ko<span></p>
-
-</div>
 
 <script>
 	$(document).ready(function(){
