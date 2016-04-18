@@ -182,14 +182,17 @@ textarea{
   border-radius: 0 !important;
 }
 #top{
-	background-color:white;
-	height:700px;
-	
-	background: url("grandcanyon.jpg") no-repeat center center scroll;
+	background-color:#f9f6d7;
+	height:750px;	
 	text-align:center;
-	
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+}
+#middle{
+	background-color:white;
+	height:750px;	
+	text-align:center;
+}
+#bottom{
+	background-color:#f9f6d7;
+	height:750px;	
+	text-align:center;
 }
