@@ -17,10 +17,9 @@ html{
 	color:#011627;
 	border: 3px solid #011627;
 	font-size: 1em;
-	margin: 2em 3em;
 	padding: 0.25em 3em;
-	float:left;
 	font-family: "Bradley Hand";
+	width:30rem;
 }
 .nav-links{
 	color:#011627;
@@ -183,16 +182,32 @@ textarea{
 }
 #top{
 	background-color:#f9f6d7;
-	height:750px;	
+	height:720px;	
 	text-align:center;
 }
 #middle{
 	background-color:white;
-	height:750px;	
+	height:720px;	
 	text-align:center;
 }
 #bottom{
 	background-color:#f9f6d7;
-	height:750px;	
+	height:720px;	
 	text-align:center;
+}
+.morebtn{
+	background-color:#d04c3f;
+	color:black;
+	font-size:3rem;
+	padding:1rem;
+	font-weight:700;
+	border: 0px
+}
+.checkbtn{
+	background-color:#d04c3f;
+	color:black;
+	font-size:2rem;
+	padding:0.5rem;
+	font-weight:400;
+	border: 0px
 }
