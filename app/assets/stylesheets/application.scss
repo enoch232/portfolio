@@ -177,7 +177,7 @@ textarea{
     top: 0;
     right: 0;
 }
-* {
+.btn {
   border-radius: 0 !important;
 }
 #top{
@@ -192,7 +192,7 @@ textarea{
 }
 #bottom{
 	background-color:#2EC4B6;
-	height:750px;	
+	min-height:750px;	
 	text-align:center;
 }
 .morebtn{
@@ -204,12 +204,13 @@ textarea{
 	border: 0px
 }
 .checkbtn{
-	background-color:#d04c3f;
+	background-color:#f9f6d7;
 	color:black;
 	font-size:2rem;
-	padding:0.5rem;
-	font-weight:400;
+	padding:0.8rem;
+	font-weight:500;
 	border: 0px
+
 }
 .indexproject{
 	box-shadow:5px 5px 5px #222222;
@@ -218,7 +219,7 @@ textarea{
 	background-color:white;
 	float:left;
 	margin:1.3rem;
-	background-color:#f9f6d7;
+	
 }
 .whoami-middle{
 	font-size:5rem;
