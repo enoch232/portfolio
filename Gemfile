@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'will_paginate', '~> 3.0.6'
 gem 'angularjs-rails'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
