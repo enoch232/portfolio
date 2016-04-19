@@ -213,12 +213,17 @@ textarea{
 
 }
 .indexproject{
-	box-shadow:5px 5px 5px #222222;
 	width:33rem;
 	height:23rem;
 	background-color:white;
 	float:left;
 	margin:1.3rem;
+	-webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -kthtml-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 	
 }
 .whoami-middle{
@@ -241,4 +246,16 @@ ul li{
 	text-decoration:none;
 }
 
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 10px 5px black;
+    -moz-box-shadow: 0px 10px 5px 5px black;
+    box-shadow: 0px 0px 10px 5px black;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -kthtml-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
 

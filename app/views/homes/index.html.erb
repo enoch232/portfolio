@@ -28,26 +28,16 @@
 		<span style = "font-size:5rem;font-weight:800;color:black">My Work</span>
 		<div style = "overflow:auto;margin:0 8% 0 8%;">
 			<% @projects.each do |project| %>
-
-				<div class = "indexproject">
-					<div style = "margin:1rem 0 1rem 0;">
-						<span style = "color:black;font-weight:700;font-size:2.5rem"><%= truncate(project.title, length:25) %></span>
-						<br>
-						<span style = "color:#D5D5D5;font-weight:400;font-size:1.5rem"><%= time_ago_in_words(project.created_at) %></span>
-						<br>
-						<br>
-						<br>
-						<%= link_to "Check Out", project.url, class: "btn btn-default checkbtn" %>
-					</div>
-				</div>
+				<%= render 'project', project: project %>
+				<script>
+					$('div#<%= dom_id(project) %> .indexproject').on("mouseenter",function(){
+						$('div#<%= dom_id(project) %> .indexproject').addClass("shadow");
+					});
+					$('div#<%= dom_id(project) %> .indexproject').on("mouseleave",function(){
+						$('div#<%= dom_id(project) %> .indexproject').removeClass("shadow")
+					});
+				</script>
 			<%end%>
 		</div>
 	</div>
 </div>
-<script>
-
-
-
-
-
-</script>
