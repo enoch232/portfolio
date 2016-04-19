@@ -15,31 +15,36 @@
 		<p class="alert"><%= alert %></p>
 	</div>
 	<%end%>
-	<button id="menu-toggle" href="#" class="btn btn-lg" style = "margin:1rem;background-color:#d04c3f">
+	<button id="menu-toggle" href="#" class="btn btn-lg" style = "margin:1rem;background-color:#d04c3f;z-index:10000">
 		<span class = "glyphicon glyphicon-menu-hamburger"></span>
 	</button>
-    
-
-
-
-
-
-
-
+	<div id = "mainmenu" class = "animated" style = "background-color:#d04c3f;width:100%;height:800px;opacity:0;position:absolute;z-index:9999;text-align:center;font-size:8rem;padding:25rem">
+		MENU
+	</div>
 <%= yield %>	
-
-
 <script>
 	$(document).ready(function(){
+		var menuout = 0;
 		setTimeout(function(){
 			$("#notification").fadeOut("slow",function(){
 				$("this").remove()
-
 			})
-		},1300)
+		},1300);
+		$("#menu-toggle").on("click",function(){
+			if(menuout == 0){
+				$("#mainmenu").removeClass("fadeOutRight");
+				$("#mainmenu").addClass("fadeInRight");
+				menuout = 1;
+			}else{
+				$("#mainmenu").removeClass("fadeOutRight");
+				$("#mainmenu").addClass("fadeOutRight");
+				menuout = 0;
+			}
+
+		});
+
+
 	});
-
-
 </script>
 
 

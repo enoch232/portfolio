@@ -9,7 +9,7 @@
 </div>
 <div id = "middle">
 	<div class = "jumbotron" style = "background-color:#2EC4B6">
-		<span style = "font-size:5rem;font-weight:700;color:#353535">Who Am I?</span>
+		<span class = "whoami-middle slide-left">Who Am I?</span>
 	</div>
 	<div style = "margin:0 auto;width:400px;text-align:left;">
 		<br>
@@ -23,27 +23,31 @@
 	</div>
 	<br>
 	<%= link_to "More About Me", homes_aboutme_path, class: "btn btn-default morebtn" %>
-
 </div>
 <div id = "bottom">
 	<div style =  "position:relative;margin:0 0 0 0;padding:3% 0 0 0;text-align:center">
 		<span style = "font-size:5rem;font-weight:800;color:black">My Work</span>
 		<div style = "background-color:black;margin:0 8% 0 8%;">
-		<% @projects.each do |project| %>
+			<% @projects.each do |project| %>
 
-			<div style = "width:33rem;height:23rem;background-color:white;float:left;margin:1.3rem;background-color:#2EC4B6">
-				<div style = "margin:1rem 0 1rem 0;">
-					<span style = "color:black;font-weight:700;font-size:2.5rem"><%= project.title %></span>
-					<br>
-					<span style = "color:D5DD5;font-weight:400;font-size:1.5rem"><%= time_ago_in_words(project.created_at) %></span>
-					<br>
-					<br>
-					<%= link_to "Check Out",project.url, class: "btn btn-default checkbtn" %>
+				<div class = "indexproject">
+					<div style = "margin:1rem 0 1rem 0;">
+						<span style = "color:black;font-weight:700;font-size:2.5rem"><%= project.title %></span>
+						<br>
+						<span style = "color:#D5D5D5;font-weight:400;font-size:1.5rem"><%= time_ago_in_words(project.created_at) %></span>
+						<br>
+						<br>
+						<%= link_to "Check Out",project.url, class: "btn btn-default checkbtn" %>
+					</div>
 				</div>
-			</div>
-			
-		<%end%>
+			<%end%>
 		</div>
 	</div>
-	
 </div>
+<script>
+
+
+
+
+
+</script>
