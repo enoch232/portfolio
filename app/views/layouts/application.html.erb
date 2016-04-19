@@ -42,9 +42,12 @@
 				$("#mainmenu").show();
 				menuout = 1;
 			}else{
-				$("#mainmenu").removeClass("fadeOutRight");
+				$("#mainmenu").removeClass("fadeInRight");
 				$("#mainmenu").addClass("fadeOutRight");
-				$("#mainmenu").hide();
+				setTimeout(function(){
+					$("#mainmenu").hide();
+				},500);
+				
 				menuout = 0;
 			}
 
