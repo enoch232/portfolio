@@ -1,12 +1,12 @@
 <div>
-	<div style = "text-align:center;font-size:3em;margin:1.2em" class = "fontBradley">
+	<div style = "text-align:center;font-size:3em;margin:1.2em" class = "fontLato">
 		<%= @post.title %>
 	</div>
-	<div style = "padding:4em;font-size:1.7em;padding:0rem 10% 0rem 10%" class = "well">
+	<div style = "padding:4em;font-size:1.7em;padding:0rem 10% 0rem 10%" class = "well fontLato">
 		<%= @post.body.html_safe %>
 	</div>
 	<br>
-	<div id = "comment-holder">
+	<div id = "comment-holder" class = "fontLato">
 		<%= render partial: @post.comments %>
 	</div>
 </div>
