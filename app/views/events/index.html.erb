@@ -29,5 +29,8 @@
 
   </div>
   <% end %>
-  <%= will_paginate @events %>
+  <br>
+  <div style = "text-align:center;display:inline-block">
+    <%= will_paginate @events, class: "digg_pagination" %>
+  </div>
 </div>
