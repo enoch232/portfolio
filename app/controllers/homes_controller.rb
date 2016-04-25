@@ -7,6 +7,4 @@ class HomesController < ApplicationController
 	end
 	def contact
 	end
-	
-
 end

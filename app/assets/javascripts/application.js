@@ -16,7 +16,7 @@
 //= require_tree .
 
 //= require bootstrap-sprockets
-//= require turbolinks_transitions
+
 //= require angular
 //= require angular-animate
 //= require angular-resource
