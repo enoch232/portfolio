@@ -14,12 +14,15 @@ html{
 	background-color: #011627;
 }
 .logo{
-	color:#011627;
 	border: 3px solid #011627;
-	font-size: 1em;
 	padding: 0.25em 3em;
 	font-family: "Bradley Hand";
 	width:30rem;
+	margin:2rem 0 2rem 0;
+	font-size:2rem;
+	color:#050505;
+	text-align:center;
+	display:inline-block;
 }
 .nav-links{
 	color:#011627;
@@ -300,7 +303,17 @@ ul li{
     overflow: hidden; }
 
 .skills{
-	
+	text-align:center;
+
+}
+.skill{
+	display:inline-block;
+
+}
+.my-description{
+	margin:0 auto;
+	width:400px;
+	text-align:left;
 }
 
 
