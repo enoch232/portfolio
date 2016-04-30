@@ -1,9 +1,13 @@
-<div style = "text-align:center;">
-  <h1 class = "fontLato" style= "font-size:5rem;font-weight:600">Projects</h1>
-  <hr style = "display:inline-block;width:50%">
+<div class = "background-img" style = "top:0;opacity:0.5;">
+  <%= image_tag("grandcanyon.jpg", style: "width:110%") %>
 </div>
-<div>
-  <% @projects.each do |project| %>
+<div class = "body-container">
+  <div style = "text-align:center;">
+    <h1 class = "fontLato" style= "font-size:5rem;font-weight:600">Projects</h1>
+    <hr style = "display:inline-block;width:50%">
+  </div>
+  <div>
+    <% @projects.each do |project| %>
     <div class = "col-sm-6 projectViews fontLato animated fadeIn" style = "border:2px solid grey" >
       <span style = "color:#e71d36;" ><%= project.title %></span>
       <br>
@@ -11,13 +15,13 @@
       <div class = "descriptiondiv" style = "text-align:left;padding:1rem;font-size:2rem;color:#263238">
         <%= project.description %>
       </div>
-        <%= link_to "Check it out!", project.url, class: "btn btn-default checkitoutbtn" %>
+      <%= link_to "Check it out!", project.url, class: "btn btn-default checkitoutbtn" %>
       <% if user_signed_in? %>
-        <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
-        <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
+      <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
+      <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
       <% end %>
     </div>
-  <% end %>
+    <% end %>
 
-</div>
-
+  </div>
+</div> 

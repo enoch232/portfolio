@@ -1,36 +1,41 @@
-<div style = "text-align:center;">
-  <h1 class = "fontLato" style= "font-size:5rem;font-weight:600">Timeline</h1>
-  <hr style = "display:inline-block;width:50%">
+<div class = "background-img" style = "top:0;opacity:0.5;">
+  <%= image_tag("grandcanyon.jpg", style: "width:110%") %>
 </div>
+<div class = "body-container">
+  <div style = "text-align:center;">
+    <h1 class = "fontLato" style= "font-size:5rem;font-weight:600">Timeline</h1>
+    <hr style = "display:inline-block;width:50%">
+  </div>
 
 
 
-<div style = "text-align:center;margin:0 0 10em 0">
-  <% if user_signed_in? %>
+  <div style = "text-align:center;margin:0 0 10em 0">
+    <% if user_signed_in? %>
     <%= link_to "New Event", new_event_path, class: "btn btn-info" %>
-  <% end %>
-      <br>
-  <% @events.each do |event| %>
+    <% end %>
+    <br>
+    <% @events.each do |event| %>
 
-  <div class = "eventViews fontLato animated fadeIn">
-    <div style = "text-align:center;width: 100%;font-size:1.5em" >
-      <%= event.title %>
-    </div>
-    <hr class = "hr-2">
-    <div style = "width: 100%;padding:0 2rem 0 2rem;color:#525252" >
-      <%= event.detail %>
-    </div>
-    <div style = "text-align:center;width: 100%" >
-      <% if user_signed_in? %>
+    <div class = "eventViews fontLato animated fadeIn">
+      <div style = "text-align:center;width: 100%;font-size:1.5em" >
+        <%= event.title %>
+      </div>
+      <hr class = "hr-2">
+      <div style = "width: 100%;padding:0 2rem 0 2rem;color:#525252" >
+        <%= event.detail %>
+      </div>
+      <div style = "text-align:center;width: 100%" >
+        <% if user_signed_in? %>
         <%= link_to "Edit", edit_event_path(event), class: "btn btn-default"%>
         <%= link_to "Delete", event, method: :delete, data: {confirm: "Are you sure?"},class: "btn btn-danger" %>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
 
-  </div>
-  <% end %>
-  <br>
-  <div style = "text-align:center;display:inline-block">
-    <%= will_paginate @events, class: "digg_pagination" %>
+    </div>
+    <% end %>
+    <br>
+    <div style = "text-align:center;display:inline-block">
+      <%= will_paginate @events, class: "digg_pagination" %>
+    </div>
   </div>
 </div>
