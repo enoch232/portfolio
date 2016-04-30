@@ -183,7 +183,6 @@ textarea{
 	background-color:#f9f6d7;
 	height:750px;	
 	text-align:center;
-	opacity:0.5;
 }
 #middle{
 	background-color:#f5f5f5;
@@ -192,9 +191,8 @@ textarea{
 }
 #services{
 	background-color:white;
-	height:750px;	
+	min-height:750px;	
 	text-align:center;
-	opacity:0.8;
 }
 #bottom{
 	background-color:#2EC4B6;
@@ -218,20 +216,7 @@ textarea{
 	border:3px solid black;
 
 }
-.indexproject{
-	width:33rem;
-	height:23rem;
-	background-color:white;
-	float:left;
-	margin:1.3rem;
-	-webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -kthtml-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-	
-}
+
 .whoami-middle{
 	font-size:5rem;
 	font-weight:700;
@@ -319,29 +304,166 @@ ul li{
 	display:block;
 	
 }
-.skill{
-	display:inline-block;
-	margin:7rem;
-	font-size:2rem;
-	font-weight:500;
 
-}
-.my-description{
-	margin:0 auto;
-	width:400px;
-	text-align:left;
-}
-.skill-img{
-	margin:1rem;
-	height:120px;
-	width:120px;
-}
-.background-img{
-	position:fixed;
-	z-index:1;
-
-}
 .body-container{
 	position:relative;
 	z-index:2;
+}
+
+
+@media (max-width:10000px) and (min-width:625px){
+	.skill{
+	display:inline-block;
+	margin:1rem;
+	font-size:2rem;
+	font-weight:500;
+	height:35rem;
+
+	}
+	.my-description{
+		margin:0 auto;
+		width:400px;
+		text-align:left;
+	}
+	.my-description-sentences{
+		font-size:1.5rem;
+	}
+	.skill-img{
+		margin:1rem;
+		height:120px;
+		width:120px;
+	}
+
+	.skill-description{
+		font-size:1.5rem;
+		width:42rem;
+
+	}
+	.titles{
+		font-size:5rem;
+		font-weight:600;
+	}
+	.indexproject{
+		width:33rem;
+		height:23rem;
+		background-color:white;
+		float:left;
+		margin:1.3rem;
+		-webkit-transition: all 0.2s linear;
+	    -o-transition: all 0.2s linear;
+	    -moz-transition: all 0.2s linear;
+	    -ms-transition: all 0.2s linear;
+	    -kthtml-transition: all 0.2s linear;
+	    transition: all 0.2s linear;
+		
+	}
+	.indexproject-title{
+		color:black;
+		font-weight:700;
+		font-size:2.5rem;
+	}
+}
+@media (max-width:624px) and (min-width:440px){
+	.skill{
+	display:inline-block;
+	margin:1rem;
+	font-size:2rem;
+	font-weight:500;
+	height:35rem;
+
+	}
+	.my-description{
+		margin:0 auto;
+		width:400px;
+		text-align:left;
+	}
+	.my-description-sentences{
+		font-size:1.3rem;
+	}
+	.skill-img{
+		margin:1rem;
+		height:120px;
+		width:120px;
+	}
+
+	.skill-description{
+		font-size:1.2rem;
+		width:42rem;
+
+	}
+	.titles{
+		font-size:3.5rem;
+		font-weight:600;
+	}
+	.indexproject{
+		width:33rem;
+		height:23rem;
+		background-color:white;
+		margin:1.3rem;
+		-webkit-transition: all 0.2s linear;
+	    -o-transition: all 0.2s linear;
+	    -moz-transition: all 0.2s linear;
+	    -ms-transition: all 0.2s linear;
+	    -kthtml-transition: all 0.2s linear;
+	    transition: all 0.2s linear;
+		
+	}
+	.indexproject-title{
+			color:black;
+			font-weight:700;
+			font-size:2.5rem;
+	}
+}
+@media (max-width:439px) and (min-width:300px){
+	.skill{
+	display:inline-block;
+	margin:1rem;
+	font-size:2rem;
+	font-weight:500;
+	height:35rem;
+
+	}
+	.my-description{
+		margin:0 auto;
+		width:400px;
+		text-align:left;
+	}
+	.my-description-sentences{
+		font-size:1.1rem;
+	}
+	.skill-img{
+		margin:1rem;
+		height:120px;
+		width:120px;
+	}
+
+	.skill-description{
+		font-size:1.2rem;
+		width:30rem;
+
+	}
+	.titles{
+		font-size:3rem;
+		font-weight:600;
+	}
+	.indexproject{
+		width:25rem;
+		height:18rem;
+		background-color:white;
+		
+		margin:1.3rem;
+		-webkit-transition: all 0.2s linear;
+	    -o-transition: all 0.2s linear;
+	    -moz-transition: all 0.2s linear;
+	    -ms-transition: all 0.2s linear;
+	    -kthtml-transition: all 0.2s linear;
+	    transition: all 0.2s linear;
+	
+	}
+	.indexproject-title{
+		color:black;
+		font-weight:700;
+		font-size:1.8rem;
+	}
+	
 }

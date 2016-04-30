@@ -1,6 +1,3 @@
-<div class = "background-img">
-	<%= image_tag("grandcanyon.jpg", style: "width:110%") %>
-</div>
 <div class ="body-container">
 	<div id = "top">
 		<div style =  "position:relative;margin:0 0 0 0;padding:20% 0 0 0" class ="animated bounceIn">
@@ -13,22 +10,24 @@
 	</div>
 	<div id = "middle">
 		<div class = "jumbotron" style = "background-color:#2EC4B6">
-			<span class = "whoami-middle slide-left">Who Am I?</span>
+			<span class = "whoami-middle slide-left titles">Who Am I?</span>
 		</div>
 		<div class = "my-description">
 			<br>
 			<span style = "font-size:3rem;color:#050505;"> I am..</span>			
 			<br>
 			<br>
-			<p>A web designer/developer in Phoenix Arizona,</p>
-			<p>specializing in developing efficient and competent</p>
-			<p>web applications using HTML5, CSS3, JavaScript and Ruby.</p>
+			<div class = "my-description-sentences">
+				<p>A web designer/developer in Phoenix Arizona,</p>
+				<p>specializing in developing efficient and competent</p>
+				<p>web applications using HTML5, CSS3, JavaScript and Ruby.</p>
+			</div>
 		</div>
 		<br>
 		<%= link_to "More About Me", homes_aboutme_path, class: "btn btn-default morebtn" %>
 	</div>
 	<div id = "services">
-		<div style = "font-size:5rem;font-weight:600">
+		<div class = "titles" style = "margin-bottom:4rem;">
 			I Mainly Focus On..
 		</div>
 		<div class = "skills1">
@@ -40,6 +39,10 @@
 					<%= image_tag("responsive-design.png", alt: "responsive-design.png", class: "skill-img") %> 
 				</div>
 				<div class = "skill-description">
+					With so many different internet-capable devices today, it became necessary
+					to implement responsive designs to improve the users' experience.
+					With a combination of HTML, CSS3, and Bootstrap, I provide unique
+					views that correspond to their screen sizes.
 				</div>
 
 			</div>
@@ -51,6 +54,10 @@
 					<%= image_tag("thumbs-up.jpg", alt: "thumbs-up.jpg", class: "skill-img") %> 
 				</div>
 				<div class = "skill-description">
+					Today, just way too many projects fail early. Through incremental
+					development method, correct test approach, accurate scheduling, and
+					realistic planning, I deliever softwares that are reliable in 
+					numerous different situations on time.                                                              
 				</div>
 
 			</div>
@@ -64,6 +71,9 @@
 					<%= image_tag("performance.png", alt: "performance.jpg", class: "skill-img") %>
 				</div>
 				<div class = "skill-description">
+					Many webpages take too long, and take away your precious time. Using
+					minimal libraries, frameworks, and efficient codes, I give my clients
+					softwares that are fast, and efficient, without sacrificing quality.
 				</div>
 
 			</div>
@@ -75,15 +85,18 @@
 					<%= image_tag("wifi.jpg", alt: "features.jpg", class: "skill-img") %>
 				</div>
 				<div class = "skill-description">
+					Often times, projects are dull, and difficult to achieve certain tasks.
+					Through using latest technologies, I fulfill my clients' feature
+					requests, and make their software much more fun and useful.
 				</div>
 
 			</div>
 		</div>
 	</div>
 	<div id = "bottom">
-		<div style =  "position:relative;margin:0 0 0 0;padding:3% 0 0 0;text-align:center">
-			<span style = "font-size:5rem;font-weight:800;color:black">My Work</span>
-			<div style = "overflow:auto;margin:0 7% 0 7%;">
+		<div style =  "position:relative;margin:0 auto;padding:3% 0 0 0;text-align:center">
+			<span class = "titles" style = "color:black">My Work</span>
+			<div style = "overflow:auto;margin:0 auto;">
 				<% @projects.each do |project| %>
 				<%= render 'project', project: project %>
 				<script>
