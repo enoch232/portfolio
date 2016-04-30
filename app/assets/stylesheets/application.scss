@@ -303,11 +303,16 @@ ul li{
     overflow: hidden; }
 
 .skills{
-	text-align:center;
+	
+
 
 }
 .skill{
 	display:inline-block;
+	text-align:center;
+	margin:7rem;
+	font-size:2rem;
+	font-weight:500;
 
 }
 .my-description{
@@ -315,5 +320,9 @@ ul li{
 	width:400px;
 	text-align:left;
 }
-
-
+.skill-img{
+	margin:1rem;
+	height:120px;
+	width:120px;
+	
+}
