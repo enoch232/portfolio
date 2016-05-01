@@ -11,7 +11,7 @@
 </head>
 <body style = "background-color:white">
 	
-	<button id="menu-toggle" href="#" class="btn btn-lg" style = "margin:1rem;background-color:#d04c3f;z-index:10000">
+	<button id="menu-toggle" href="#" class="btn btn-lg">
 		<span class = "glyphicon glyphicon-menu-hamburger"></span>
 	</button>
 	<% if notice || alert %>
@@ -20,7 +20,7 @@
 		<p class="alert"><%= alert %></p>
 	</div>
 	<% end %>
-	<div id = "mainmenu" class = "animated" style = "background-color:#d04c3f;width:100%;height:800px;top:0;opacity:0;position:fixed;z-index:9999;text-align:center;font-size:8rem;padding:14rem 0 14rem 0;font-weight:500;display:none">
+	<div id = "mainmenu" class = "animated">
 			<p><%= link_to "Home", root_path, style: "color:white" %></p>
 			<p><%= link_to "Projects", projects_path %></p>
 			<p><%= link_to "Articles", posts_path %></p>

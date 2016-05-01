@@ -28,7 +28,7 @@
 	</div>
 	<div id = "services">
 		<div class = "titles" style = "margin-bottom:4rem;">
-			I Mainly Focus On..
+			I Deliver..
 		</div>
 		<div class = "skills1">
 			<div class = "skill">
@@ -56,7 +56,7 @@
 				<div class = "skill-description">
 					Today, just way too many projects fail early. Through incremental
 					development method, correct test approach, accurate scheduling, and
-					realistic planning, I deliever softwares that are reliable in 
+					realistic planning, I offer softwares that are reliable in 
 					numerous different situations on time.                                                              
 				</div>
 
@@ -94,9 +94,9 @@
 		</div>
 	</div>
 	<div id = "bottom">
-		<div style =  "position:relative;margin:0 auto;padding:3% 0 0 0;text-align:center">
+		<div style =  "position:relative;padding:3% 0 0 0;text-align:center">
 			<span class = "titles" style = "color:black">My Work</span>
-			<div style = "overflow:auto;margin:0 auto;">
+			<div style = "">
 				<% @projects.each do |project| %>
 				<%= render 'project', project: project %>
 				<script>
@@ -108,6 +108,8 @@
 				});
 				</script>
 				<%end%>
+			</div>
+			<div style = "clear:both">
 			</div>
 		</div>
 	</div>

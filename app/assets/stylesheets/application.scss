@@ -175,6 +175,9 @@ textarea{
     position: fixed;
     top: 0;
     right: 0;
+    margin:1rem;
+    background-color:#d04c3f;
+    z-index:10000;
 }
 .btn {
   border-radius: 0 !important;
@@ -183,21 +186,34 @@ textarea{
 	background-color:#f9f6d7;
 	height:750px;	
 	text-align:center;
+	top:0;
+	right:0;
+	width:100%;
 }
 #middle{
 	background-color:#f5f5f5;
 	height:750px;	
 	text-align:center;
+	top:0;
+	right:0;
+	width:100%;
 }
 #services{
 	background-color:white;
 	min-height:750px;	
 	text-align:center;
+	top:0;
+	right:0;
+	width:100%;
 }
 #bottom{
 	background-color:#2EC4B6;
 	min-height:750px;	
 	text-align:center;
+	padding-bottom:3rem;
+	top:0;
+	right:0;
+	width:100%;
 }
 .morebtn{
 	background-color:#d04c3f;
@@ -228,6 +244,18 @@ ul li{
 }
 #mainmenu p{
 	font-size:5rem;
+	background-color:#d04c3f;
+	width:100%;
+	height:800px;
+	top:0;
+	opacity:0;
+	position:fixed;
+	z-index:9999;
+	text-align:center;
+	font-size:8rem;
+	padding:14rem 0 14rem 0;
+	font-weight:500;
+	display:none;
 }
 #mainmenu p a{
 	color:black;
@@ -306,18 +334,18 @@ ul li{
 }
 
 .body-container{
-	position:relative;
-	z-index:2;
+	width:100%;
+	right:0;
 }
 
 
 @media (max-width:10000px) and (min-width:625px){
 	.skill{
-	display:inline-block;
-	margin:1rem;
-	font-size:2rem;
-	font-weight:500;
-	height:35rem;
+		display:inline-block;
+		margin:1rem;
+		font-size:2rem;
+		font-weight:500;
+		height:35rem;
 
 	}
 	.my-description{
@@ -337,6 +365,7 @@ ul li{
 	.skill-description{
 		font-size:1.5rem;
 		width:42rem;
+		font-weight:200;
 
 	}
 	.titles{
@@ -347,8 +376,9 @@ ul li{
 		width:33rem;
 		height:23rem;
 		background-color:white;
+		display:inline-block;
+		margin:1.5rem;
 		float:left;
-		margin:1.3rem;
 		-webkit-transition: all 0.2s linear;
 	    -o-transition: all 0.2s linear;
 	    -moz-transition: all 0.2s linear;
@@ -389,6 +419,7 @@ ul li{
 	.skill-description{
 		font-size:1.2rem;
 		width:42rem;
+		font-weight:200;
 
 	}
 	.titles{
@@ -399,7 +430,7 @@ ul li{
 		width:33rem;
 		height:23rem;
 		background-color:white;
-		margin:1.3rem;
+		margin:1.3rem auto;
 		-webkit-transition: all 0.2s linear;
 	    -o-transition: all 0.2s linear;
 	    -moz-transition: all 0.2s linear;
@@ -440,6 +471,8 @@ ul li{
 	.skill-description{
 		font-size:1.2rem;
 		width:30rem;
+		font-weight:200;
+
 
 	}
 	.titles{
@@ -450,8 +483,7 @@ ul li{
 		width:25rem;
 		height:18rem;
 		background-color:white;
-		
-		margin:1.3rem;
+		margin:1rem auto;
 		-webkit-transition: all 0.2s linear;
 	    -o-transition: all 0.2s linear;
 	    -moz-transition: all 0.2s linear;
