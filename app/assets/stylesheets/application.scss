@@ -150,6 +150,7 @@ a:hover{
 	height:3em;
 	opacity:0.7;
 	background-color:white;
+	font-size:2rem;
 }
 hr-2{
 	display: block;
@@ -242,7 +243,7 @@ textarea{
 ul li{
 	text-decoration: none;
 }
-#mainmenu p{
+#mainmenu{
 	font-size:5rem;
 	background-color:#d04c3f;
 	width:100%;
@@ -252,13 +253,14 @@ ul li{
 	position:fixed;
 	z-index:9999;
 	text-align:center;
-	font-size:8rem;
 	padding:14rem 0 14rem 0;
 	font-weight:500;
 	display:none;
 }
 #mainmenu p a{
 	color:black;
+
+	
 }
 #mainmenu p a:hover{
 	color:#2EC4B6;
