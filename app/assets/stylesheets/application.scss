@@ -1,7 +1,6 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 @import "animate.css";
 html{
   position:relative; 
@@ -31,10 +30,6 @@ html{
 	padding: 1em 2em;
 	float:right;
 	font-family: "Bradley Hand";
-
-	
-	
-
 }
 .fontBradley{
 	font-family: "Bradley Hand";
@@ -118,7 +113,6 @@ html{
 	margin:1.5rem;
 	display:inline-block;
 	width:90%;
-
 	background-color:white;
 }
 .eventViews:hover{
@@ -131,9 +125,7 @@ a:hover{
 	color:#011627;
 	text-decoration:none;
 }
-
 .footer {
-
 	position:absolute;
 	bottom: 0rem;
 	width:100%;
@@ -170,7 +162,6 @@ textarea{
 .checkitoutbtn{
 	background-color:#2EC4B6;
 }
-
 #menu-toggle {
     z-index: 1;
     position: fixed;
@@ -231,7 +222,6 @@ textarea{
 	padding:0.8rem;
 	font-weight:500;
 	border:3px solid black;
-
 }
 
 .whoami-middle{
@@ -322,24 +312,19 @@ ul li{
   * html .digg_pagination {
     height: 1%; }
   *:first-child + html .digg_pagination {
-    overflow: hidden; }
+    overflow: hidden; 
+    }
 
 .skills1{
-
 	display:block;
-
-
 }
 .skills2{
 	display:block;
-	
 }
-
 .body-container{
 	width:100%;
 	right:0;
 }
-
 .me-img{
 	height:300px;
 	width:300px;
@@ -356,7 +341,6 @@ ul li{
 		font-size:2rem;
 		font-weight:500;
 		height:35rem;
-
 	}
 	.my-description{
 		margin:0 auto;
@@ -374,9 +358,8 @@ ul li{
 
 	.skill-description{
 		font-size:1.5rem;
-		width:38rem;
+		width:35rem;
 		font-weight:200;
-
 	}
 	.titles{
 		font-size:5rem;
@@ -395,7 +378,6 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
-		
 	}
 	.indexproject-title{
 		color:black;
@@ -416,7 +398,6 @@ ul li{
 	font-size:2rem;
 	font-weight:500;
 	height:35rem;
-
 	}
 	.my-description{
 		margin:0 auto;
@@ -436,7 +417,6 @@ ul li{
 		font-size:1.2rem;
 		width:42rem;
 		font-weight:200;
-
 	}
 	.titles{
 		font-size:3.5rem;
@@ -453,7 +433,6 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
-		
 	}
 	.indexproject-title{
 			color:black;
@@ -474,7 +453,6 @@ ul li{
 	font-size:2rem;
 	font-weight:500;
 	height:35rem;
-
 	}
 	.my-description{
 		margin:0 auto;
@@ -494,8 +472,6 @@ ul li{
 		font-size:1.2rem;
 		width:30rem;
 		font-weight:200;
-
-
 	}
 	.titles{
 		font-size:3rem;
@@ -512,7 +488,6 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
-	
 	}
 	.indexproject-title{
 		color:black;
