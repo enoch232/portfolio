@@ -33,6 +33,26 @@
 			$(".my-description-sentences").addClass("animated fadeInRight");
 
 		}
+		if ($(document).scrollTop() > 1000 && $(".firstskill").hasClass("hidden-class")){
+			$(".firstskill").removeClass("hidden-class");
+			$(".firstskill").addClass("animated fadeInRight");
+			setTimeout(function(){
+				$(".secondskill").removeClass("hidden-class");
+				$(".secondskill").addClass("animated fadeInRight");
+			},300);
+			setTimeout(function(){
+				$(".thirdskill").removeClass("hidden-class");
+				$(".thirdskill").addClass("animated fadeInRight");
+			},600);
+			setTimeout(function(){
+				$(".fourthskill").removeClass("hidden-class");
+				$(".fourthskill").addClass("animated fadeInRight");
+			},900);
+			
+
+
+
+		}
 	});
 	</script>
 	<div id = "services">
@@ -40,7 +60,7 @@
 			I Deliver..
 		</div>
 		<div class = "skills1">
-			<div class = "skill">
+			<div class = "firstskill skill hidden-class">
 				<div>
 					Responsive Design
 				</div>
@@ -55,7 +75,7 @@
 				</div>
 
 			</div>
-			<div class = "skill">
+			<div class = "secondskill skill hidden-class">
 				<div>
 					Reliability
 				</div>
@@ -72,7 +92,7 @@
 			</div>
 		</div>
 		<div class = "skills2">
-			<div class = "skill">
+			<div class = "thirdskill skill hidden-class">
 				<div>
 					Performance
 				</div>
@@ -86,7 +106,7 @@
 				</div>
 
 			</div>
-			<div class = "skill">
+			<div class = "fourthskill skill hidden-class">
 				<div>
 					Features
 				</div>
