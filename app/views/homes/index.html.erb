@@ -17,7 +17,7 @@
 			<span style = "font-size:3rem;color:#050505;"> I am..</span>			
 			<br>
 			<br>
-			<div class = "my-description-sentences">
+			<div class = "my-description-sentences hidden-class" >
 				A web designer/developer in Phoenix Arizona,
 				specializing in developing efficient and competent
 				web applications using HTML5, CSS3, JavaScript and Ruby.
@@ -26,6 +26,15 @@
 		<br>
 		<%= link_to "More About Me", aboutme_path, class: "btn btn-default morebtn" %>
 	</div>
+	<script>
+	$(document).on("scroll",function(){
+		if ($(document).scrollTop() > 400 && $(".my-description-sentences").hasClass("hidden-class")){
+			$(".my-description-sentences").removeClass("hidden-class");
+			$(".my-description-sentences").addClass("animated fadeInRight");
+
+		}
+	});
+	</script>
 	<div id = "services">
 		<div class = "titles" style = "margin-bottom:4rem;">
 			I Deliver..
