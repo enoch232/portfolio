@@ -170,6 +170,7 @@ textarea{
     right: 0;
     margin:1rem;
     background-color:#d04c3f;
+    box-shadow: 2px 10px 5px -5px rgba(0,0,0,0.4);
     z-index:10000;
 }
 .btn {
@@ -268,15 +269,9 @@ ul li{
 	text-decoration:none;
 }
 .shadow {
-    -webkit-box-shadow: 0px 0px 10px 5px black;
-    -moz-box-shadow: 0px 10px 5px 5px black;
-    box-shadow: 0px 0px 10px 5px black;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -kthtml-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+	box-shadow: 0px 20px 8px -10px rgba(0,0,0,0.4);
+	transform: translate(0,-20px);
+	transition: all ease-in-out 300ms;
 }
 .digg_pagination {
   background: white;
