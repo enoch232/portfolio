@@ -210,23 +210,34 @@ textarea{
 	width:100%;
 }
 .morebtn{
-
 	background-color:#d04c3f;
 	color:black;
 	font-size:3rem;
 	padding:1rem;
 	font-weight:700;
 	border: 0px;
-	box-shadow: 0 10px 5px -5px rgba(0,0,0,0.4);
-	transition: all ease-in-out 300ms;
-
+	animation-name: a-morebtn;
+	animation-duration: 1200ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
 	&:hover{
 		background-color:#d04c3f;
 		color:black;
-		box-shadow: 0 15px 10px -10px rgba(0,0,0,0.3);
-		transform: translate(0px, -5px);
 	}
 }
+@keyframes a-morebtn{
+	from{
+		box-shadow: 0 10px 5px -5px rgba(0,0,0,0.4);
+	}
+	50%{
+		transform: translate(0px, -5px);
+		box-shadow: 0 15px 10px -10px rgba(0,0,0,0.3);
+	}
+	to{
+		box-shadow: 0 10px 5px -5px rgba(0,0,0,0.4);
+	}
+}
+
 .checkbtn{
 	background-color:#d04c3f;
 	color:black;
@@ -270,7 +281,7 @@ ul li{
 }
 .shadow {
 	box-shadow: 0px 20px 8px -10px rgba(0,0,0,0.4);
-	transform: translate(0,-20px);
+	transform: translate(0,-10px);
 	transition: all ease-in-out 300ms;
 }
 .digg_pagination {
