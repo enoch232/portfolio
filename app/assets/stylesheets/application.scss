@@ -208,12 +208,24 @@ textarea{
 	width:100%;
 }
 .morebtn{
+
 	background-color:#d04c3f;
 	color:black;
 	font-size:3rem;
 	padding:1rem;
 	font-weight:700;
-	border: 0px
+	border: 0px;
+	box-shadow: 0 10px 5px -5px rgba(0,0,0,0.4);
+	transition: all ease-in-out 300ms;
+
+	&:hover{
+		animation-name: bgcolorchange;
+		animation-duration:0.8s;
+		background-color:#d04c3f;
+		color:black;
+		box-shadow: 0 15px 10px -10px rgba(0,0,0,0.3);
+		transform: translate(0px, -5px);
+	}
 }
 .checkbtn{
 	background-color:#d04c3f;
@@ -527,3 +539,17 @@ ul li{
 .hidden-class{
 	visibility:hidden;
 }
+
+
+
+
+/*!
+*CUSTOM ANIMATION
+*
+*/
+
+
+
+
+
+
