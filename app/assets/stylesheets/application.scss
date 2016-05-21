@@ -108,15 +108,17 @@ html{
 	box-shadow: 4px 4px 4px 4px #e2e2e2;
 }
 .eventViews{
+	background-color:#f9f6d7;
 	border-radius: 1rem;
-	border:2px solid #e2e2e2;
 	margin:1.5rem;
 	display:inline-block;
 	width:90%;
-	background-color:white;
+	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
+	transition: all ease-in-out 300ms;
+
 }
 .eventViews:hover{
-	box-shadow: 4px 4px 4px 4px #e2e2e2;
+	box-shadow: 0px 20px 10px -10px rgba(0,0,0,0.3);
 }
 a{
 	color:#2EC4B6;
@@ -219,8 +221,6 @@ textarea{
 	transition: all ease-in-out 300ms;
 
 	&:hover{
-		animation-name: bgcolorchange;
-		animation-duration:0.8s;
 		background-color:#d04c3f;
 		color:black;
 		box-shadow: 0 15px 10px -10px rgba(0,0,0,0.3);
