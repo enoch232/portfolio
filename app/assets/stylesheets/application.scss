@@ -96,16 +96,16 @@ html{
 }
 .postViews{
 	border-radius: 0.5rem;
-	border:2px solid #e2e2e2;
 	margin:0.2rem;
 	padding:0em;
 	display:inline-block;
 	width:90%;
-	background-color:white;
+	background-color:rgba(0,0,0,0.1);
+	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
+	transition: all ease-in-out 300ms;
 }
 .postViews:hover{
-	background-color:#f2f2f2;
-	box-shadow: 4px 4px 4px 4px #e2e2e2;
+	box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.3);
 }
 .eventViews{
 	background-color:#f9f6d7;
@@ -115,7 +115,6 @@ html{
 	width:90%;
 	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
 	transition: all ease-in-out 300ms;
-
 }
 .eventViews:hover{
 	box-shadow: 0px 20px 10px -10px rgba(0,0,0,0.3);
