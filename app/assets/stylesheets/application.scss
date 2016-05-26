@@ -95,29 +95,27 @@ html{
 	
 }
 .postViews{
-	border-radius: 0.5rem;
 	margin:0.2rem;
 	padding:0em;
 	display:inline-block;
 	width:90%;
 	background-color:rgba(0,0,0,0.1);
-	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
 	transition: all ease-in-out 300ms;
 }
 .postViews:hover{
-	box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.3);
+	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
 }
 .eventViews{
-	background-color:#f9f6d7;
-	border-radius: 1rem;
-	margin:1.5rem;
+	text-align:left;
+	background-color:white;
+	margin:1rem;
 	display:inline-block;
 	width:90%;
-	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
+	min-height:120px;
 	transition: all ease-in-out 300ms;
 }
 .eventViews:hover{
-	box-shadow: 0px 20px 10px -10px rgba(0,0,0,0.3);
+	box-shadow: 0px 10px 5px -5px rgba(0,0,0,0.4);
 }
 a{
 	color:#2EC4B6;
