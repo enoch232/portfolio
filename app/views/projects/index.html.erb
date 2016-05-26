@@ -4,19 +4,20 @@
 </div>
 <div>
   <% @projects.each do |project| %>
-    <div class = "col-sm-6 projectViews fontLato animated fadeIn" style = "border:2px solid grey" >
-      <span style = "color:#e71d36;" ><%= project.title %></span>
-      <br>
-      <hr>
-      <div class = "descriptiondiv">
-        <%= project.description %>
-      </div>
-        <%= link_to "Check it out!", project.url, class: "btn btn-default checkitoutbtn" %>
-      <% if user_signed_in? %>
-        <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
-        <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
-      <% end %>
+  <%= link_to project.url do %>
+  <div class = "projectViews fontLato animated fadeIn" >
+    <div style = "background-color:#2EC4B6;color:black;width:100%">
+      <span><%= project.title %></span>
     </div>
+    <div class = "descriptiondiv">
+      <%= project.description %>
+    </div>
+    <% if user_signed_in? %>
+    <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
+    <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
+    <% end %>
+  </div>
+  <% end %>
   <% end %>
 </div>
 
