@@ -291,9 +291,7 @@ ul li{
 	text-decoration:none;
 }
 .shadow {
-	box-shadow: 0px 20px 8px -10px rgba(0,0,0,0.4);
-	transform: translate(0,-10px);
-	transition: all ease-in-out 300ms;
+
 }
 .digg_pagination {
   background: white;
@@ -391,7 +389,7 @@ ul li{
 	}
 	.indexproject{
 		width:33rem;
-		height:23rem;
+		height:27rem;
 		background-color:white;
 		display:inline-block;
 		margin:1.5rem;
@@ -515,11 +513,7 @@ ul li{
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
 	}
-	.indexproject-title{
-		color:black;
-		font-weight:700;
-		font-size:1.8rem;
-	}
+
 	.descriptiondiv{
 		text-align:left;
 		padding:1rem;
@@ -553,8 +547,28 @@ ul li{
 .hidden-class{
 	visibility:hidden;
 }
-
-
+.project-image{
+	width:90%;
+	margin:1rem auto;
+	transition:all ease-in-out 300ms;
+	
+}
+.index-project-title{
+	color:black;
+	font-weight:700;
+	font-size:1.8rem;
+	height:4rem;
+	width:100%;
+	transition:all ease-in-out 300ms;
+}
+.indexproject:hover{
+	.project-image{
+		width:100%;
+		margin-top:0rem;
+	}
+	.index-project-title{
+	}
+}
 
 
 

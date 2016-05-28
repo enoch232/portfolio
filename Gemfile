@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "paperclip", "~> 5.0.0.beta1"
 gem 'will_paginate', '~> 3.0.6'
 gem 'angularjs-rails'
 gem 'devise'
