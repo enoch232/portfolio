@@ -1,13 +1,14 @@
 <%= div_for(project) do %>
+<%= link_to project.url do %>
 <div class = "indexproject" id = "boxshadow">
 	<div style = "margin:0 auto;">
 		<span class = "indexproject-title" style = ""><%= truncate(project.title, length:25) %></span>
 		<br>
-		<span style = "color:#858585;font-weight:400;font-size:1.5rem"><%= time_ago_in_words(project.created_at) %></span>
+		<span style = "color:#c0c0c0;font-weight:400;font-size:1.5rem"><%= time_ago_in_words(project.created_at) %></span>
 		<br>
 		<br>
 		<br>
-		<%= link_to "Check Out", project.url, class: "btn btn-default checkbtn" %>
 	</div>
 </div>
+<% end %>
 <% end %>
