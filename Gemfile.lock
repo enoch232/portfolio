@@ -189,7 +189,7 @@ PLATFORMS
 
 DEPENDENCIES
   angularjs-rails
-  aws-sdk (>= 2.0.34)
+  aws-sdk (>= 2.0)
   bootstrap-sass (~> 3.3, >= 3.3.6)
   byebug
   coffee-rails (~> 4.1.0)
