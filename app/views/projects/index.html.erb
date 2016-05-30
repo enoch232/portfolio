@@ -3,21 +3,13 @@
 </div>
 <div>
   <div style =  "position:relative;padding:3% 0 0 0;text-align:center">
-      <div style = "text-align:center;margin:0 7%;">
-        <% @projects.each do |project| %>
-        <%= render 'project', project: project %>
-        <script>
-        $('div#<%= dom_id(project) %> .indexproject').on("mouseenter",function(){
-          $('div#<%= dom_id(project) %> .indexproject').addClass("shadow");
-        });
-        $('div#<%= dom_id(project) %> .indexproject').on("mouseleave",function(){
-          $('div#<%= dom_id(project) %> .indexproject').removeClass("shadow")
-        });
-        </script>
-        <%end%>
-      </div>
-      <div style = "clear:both">
-      </div>
+    <div style = "text-align:center;margin:0 7%;">
+      <% @projects.each do |project| %>
+      <%= render 'project', project: project %>
+      <%end%>
     </div>
+    <div style = "clear:both">
+    </div>
+  </div>
 </div>
 
