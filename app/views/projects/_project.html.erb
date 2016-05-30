@@ -2,7 +2,7 @@
 <%= link_to project.url do %>
 <div class = "indexproject" id = "boxshadow">
 	<div class = "project-description hidden-class">
-		This app does nothing much but htis is a description, so that it looks good
+		<%= project.description %>
 	</div>
 	<div style = "margin:0 auto;position:relative;z-index:999;top:0">
 		<%= image_tag project.image.url(:large), class: "project-image"%>
