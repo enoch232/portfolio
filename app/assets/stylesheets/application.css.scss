@@ -290,9 +290,6 @@ ul li{
 	color:#2EC4B6;
 	text-decoration:none;
 }
-.shadow {
-
-}
 .digg_pagination {
   background: white;
   cursor: default;
@@ -548,6 +545,7 @@ ul li{
 	visibility:hidden;
 }
 .project-image{
+	position:relative;
 	width:90%;
 	margin:1rem auto;
 	transition:all ease-in-out 300ms;
@@ -627,6 +625,19 @@ ul li{
 	float:right;
 	
 }
+.shadow {
 
 
+}
+.project-description{
+	opacity:0.7;
+	background-color:#141414;
+	color:white;
+	position:absolute;
+	z-index:1000;
+	width:33rem;
+	height:27rem;
+	font-size:2rem;
+	padding:1rem;
+}
 
