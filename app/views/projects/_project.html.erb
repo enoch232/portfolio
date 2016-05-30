@@ -1,7 +1,7 @@
 <%= div_for(project) do %>
 <%= link_to project.url do %>
 <div class = "indexproject" id = "boxshadow">
-	<div class = "project-description">
+	<div class = "project-description hidden-class">
 		This app does nothing much but htis is a description, so that it looks good
 	</div>
 	<div style = "margin:0 auto;position:relative;z-index:999;top:0">
@@ -9,5 +9,13 @@
 		<div class = "index-project-title"><%= truncate(project.title, length:25) %></div>
 	</div>
 </div>
+<script>
+	$('div#<%= dom_id(project) %> .indexproject').on("mouseenter",function(){
+		$('div#<%= dom_id(project) %> .project-description').removeClass("hidden-class");
+	});
+	$('div#<%= dom_id(project) %> .indexproject').on("mouseleave",function(){
+		$('div#<%= dom_id(project) %> .project-description').addClass("hidden-class");
+	});
+</script>
 <% end %>
 <% end %>

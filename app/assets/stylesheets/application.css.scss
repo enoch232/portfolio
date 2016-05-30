@@ -543,6 +543,7 @@ ul li{
 }
 .hidden-class{
 	visibility:hidden;
+	transition:all ease-in-out 300ms;
 }
 .project-image{
 	position:relative;
