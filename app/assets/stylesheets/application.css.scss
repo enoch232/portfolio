@@ -397,6 +397,17 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
+	    .project-description{
+			opacity:0.7;
+			background-color:#141414;
+			color:white;
+			position:absolute;
+			z-index:1000;
+			width:33rem;
+			height:27rem;
+			font-size:2rem;
+			padding:1rem;
+		}
 	}
 	.indexproject-title{
 		color:black;
@@ -453,6 +464,17 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
+	    .project-description{
+			opacity:0.7;
+			background-color:#141414;
+			color:white;
+			position:absolute;
+			z-index:1000;
+			width:33rem;
+			height:23rem;
+			font-size:1.7rem;
+			padding:1rem;
+		}
 	}
 	.indexproject-title{
 			color:black;
@@ -509,6 +531,17 @@ ul li{
 	    -ms-transition: all 0.2s linear;
 	    -kthtml-transition: all 0.2s linear;
 	    transition: all 0.2s linear;
+	    .project-description{
+			opacity:0.7;
+			background-color:#141414;
+			color:white;
+			position:absolute;
+			z-index:1000;
+			width:25rem;
+			height:18rem;
+			font-size:1.4rem;
+			padding:1rem;
+		}
 	}
 
 	.descriptiondiv{
@@ -630,15 +663,5 @@ ul li{
 
 
 }
-.project-description{
-	opacity:0.7;
-	background-color:#141414;
-	color:white;
-	position:absolute;
-	z-index:1000;
-	width:33rem;
-	height:27rem;
-	font-size:2rem;
-	padding:1rem;
-}
+
 
