@@ -1,23 +1,23 @@
 <div style = "text-align:center;">
   <h1 class = "fontLato" style= "font-size:5rem;font-weight:600">Projects</h1>
-  <hr style = "display:inline-block;width:50%">
 </div>
 <div>
-  <% @projects.each do |project| %>
-  <%= link_to project.url do %>
-  <div class = "projectViews fontLato animated fadeIn" >
-    <div class = "project-index-title">
-      <span><%= project.title %></span>
+  <div style =  "position:relative;padding:3% 0 0 0;text-align:center">
+      <div style = "text-align:center;margin:0 7%;">
+        <% @projects.each do |project| %>
+        <%= render 'project', project: project %>
+        <script>
+        $('div#<%= dom_id(project) %> .indexproject').on("mouseenter",function(){
+          $('div#<%= dom_id(project) %> .indexproject').addClass("shadow");
+        });
+        $('div#<%= dom_id(project) %> .indexproject').on("mouseleave",function(){
+          $('div#<%= dom_id(project) %> .indexproject').removeClass("shadow")
+        });
+        </script>
+        <%end%>
+      </div>
+      <div style = "clear:both">
+      </div>
     </div>
-    <div class = "descriptiondiv">
-      <%= project.description %>
-    </div>
-    <% if user_signed_in? %>
-    <%= link_to "Edit", edit_project_path(project) , class: "btn btn-default" %>
-    <%= link_to "delete", project, method: :delete , class: "btn btn-danger" %>
-    <% end %>
-  </div>
-  <% end %>
-  <% end %>
 </div>
 

@@ -1,0 +1,10 @@
+<%= div_for(project) do %>
+<%= link_to project.url do %>
+<div class = "indexproject" id = "boxshadow">
+	<div style = "margin:0 auto;">
+		<%= image_tag project.image.url(:large), class: "project-image"%>
+		<div class = "index-project-title"><%= truncate(project.title, length:25) %></div>
+	</div>
+</div>
+<% end %>
+<% end %>

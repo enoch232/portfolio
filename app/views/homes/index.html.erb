@@ -39,15 +39,15 @@
 			setTimeout(function(){
 				$(".secondskill").removeClass("hidden-class");
 				$(".secondskill").addClass("animated fadeInRight");
-			},300);
+			},500);
 			setTimeout(function(){
 				$(".thirdskill").removeClass("hidden-class");
 				$(".thirdskill").addClass("animated fadeInRight");
-			},600);
+			},1000);
 			setTimeout(function(){
 				$(".fourthskill").removeClass("hidden-class");
 				$(".fourthskill").addClass("animated fadeInRight");
-			},900);
+			},1500);
 			
 
 
@@ -123,23 +123,34 @@
 		</div>
 	</div>
 	<div id = "bottom">
-		<div style =  "position:relative;padding:3% 0 0 0;text-align:center">
-			<span class = "titles" style = "color:black">My Work</span>
-			<div style = "text-align:center;margin:0 7%;">
-				<% @projects.each do |project| %>
-				<%= render 'project', project: project %>
-				<script>
-				$('div#<%= dom_id(project) %> .indexproject').on("mouseenter",function(){
-					$('div#<%= dom_id(project) %> .indexproject').addClass("shadow");
-				});
-				$('div#<%= dom_id(project) %> .indexproject').on("mouseleave",function(){
-					$('div#<%= dom_id(project) %> .indexproject').removeClass("shadow")
-				});
-				</script>
-				<%end%>
+		<div style = "font-size:5rem;font-weight:600">
+			Skills
+		</div>
+		<div>
+			<div style = "font-size:3rem;font-weight:300;">
+				Languages
+			</div>
+			<div>
+				<div class = "language language-left">
+					HTML/CSS
+				</div>
+				<div class = "language language-right">
+					RUBY
+				</div>
+
+			</div>
+		</div>
+		
+		<div>
+			<div style = "font-size:3rem;font-weight:300;">
+				Frameworks and Libraries
 			</div>
 			<div style = "clear:both">
 			</div>
+			<div>
+
+			</div>
 		</div>
+		
 	</div>
 </div>
