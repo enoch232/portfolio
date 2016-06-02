@@ -10,6 +10,9 @@
 			<div class = "index-project-title"><%= truncate(project.title, length:25) %></div>
 		</div>
 	</div>
+	<div class = "index-project-madeof">
+		<%= project.madeof %>
+	</div>
 	<% if current_user %>
 	<div>
 		<div style = "display:inline-block">
