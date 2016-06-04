@@ -2,7 +2,7 @@
 	<div style = "text-align:center;font-size:3em;margin:1.2em" class = "fontLato">
 		<%= @post.title %>
 	</div>
-	<div style = "padding:4em;font-size:1.7em;padding:0rem 10% 0rem 10%" class = "well fontLato">
+	<div class = "well fontLato post-show-body">
 		<%= @post.body.html_safe  %>
 	</div>
 	<br>
@@ -18,7 +18,7 @@
 </div>
 <div style = "text-align:center">
 	<% if user_signed_in? %>
-		<%= link_to 'Edit', edit_post_path(@post), class: "fontLato" %> |
+		<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default fontLato" %>
 	<% end %>
 		<%= link_to 'Back', posts_path, class: "btn btn-default fontLato" %>
 </div>
