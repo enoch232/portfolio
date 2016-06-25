@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/aboutme' =>'homes#aboutme'
   get '/contact' =>'homes#contact'
   devise_scope :user do get "/sign_in" => "devise/sessions#new" end
+  devise_scope :user do get "/sign_out" => "devise/sessions#destroy" end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
