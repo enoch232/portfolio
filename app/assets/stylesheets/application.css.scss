@@ -37,6 +37,9 @@ html{
 .fontLato{
 	font-family: 'Lato', sans-serif;
 }
+.fontOpen{
+	font-family: 'Open Sans', sans-serif;
+}
 a{
 	color:#2EC4B6;
 }
@@ -684,12 +687,9 @@ ul li{
 	float:right;
 	
 }
-.well{
-	background-color:white;
-}
 .code{
-	background-color:black;
-	color:yellow;
+	background-color:#FAFAFA;
+	color:black;
 	font-size:1.3rem;
 }
 

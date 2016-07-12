@@ -1,12 +1,12 @@
 <div>
-	<div style = "text-align:center;font-size:3em;margin:1.2em" class = "fontLato">
+	<div style = "text-align:center;font-size:3em;margin:3rem" class = "fontOpen">
 		<%= @post.title %>
 	</div>
-	<div class = "well fontLato post-show-body">
+	<div class = "fontOpen post-show-body">
 		<%= @post.body.html_safe  %>
 	</div>
 	<br>
-	<div id = "comment-holder" class = "fontLato">
+	<div id = "comment-holder" class = "fontOpen">
 		<%= render partial: @post.comments%>
 	</div>
 </div>
@@ -18,7 +18,7 @@
 </div>
 <div style = "text-align:center">
 	<% if user_signed_in? %>
-		<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default fontLato" %>
+		<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-default fontOpen" %>
 	<% end %>
-		<%= link_to 'Back', posts_path, class: "btn btn-default fontLato" %>
+		<%= link_to 'Back', posts_path, class: "btn btn-default fontOpen" %>
 </div>
