@@ -6,7 +6,8 @@
   <% if user_signed_in? %>
     <%= link_to "New Article", new_post_path, class: "btn btn-info" %>
   <% end %>
-  <br>
+  <div style = "margin-bottom:2rem">
+  </div>
   <% @posts.each do |post| %>
 
   <div class = "postViews fontOpen animated fadeIn">
